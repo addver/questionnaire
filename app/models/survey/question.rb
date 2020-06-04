@@ -4,7 +4,7 @@ class Survey::Question < ActiveRecord::Base
   self.table_name = 'survey_questions'
   # relations
   has_many   :options
-  has_many   :predefined_values
+  #has_many   :predefined_values
   has_many   :answers
   belongs_to :section
 
