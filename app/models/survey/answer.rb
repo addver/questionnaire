@@ -24,7 +24,7 @@ class Survey::Answer < ActiveRecord::Base
     if option.nil?
       Survey::Option.find(option_id).weight
     else
-      option.weight
+      option.weight 
     end
   end
 
