@@ -4,7 +4,7 @@ class Survey::PredefinedValue < ActiveRecord::Base
   self.table_name = 'survey_predefined_values'
 
   # relations
-  belongs_to :question
+  #belongs_to :question
 
   # rails 3 attr_accessible support
   if Rails::VERSION::MAJOR < 4
