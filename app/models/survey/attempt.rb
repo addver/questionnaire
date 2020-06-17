@@ -19,7 +19,7 @@ class Survey::Attempt < ActiveRecord::Base
             presence: true
 
   accepts_nested_attributes_for :answers,
-                                reject_if: ->(q) { q[:question_id].blank? && q[:option_id].blank? },
+                                reject_if: ->(q) { q[:question_id].blank? || q[:option_id].blank? },
                                 allow_destroy: true
 
   # scopes
